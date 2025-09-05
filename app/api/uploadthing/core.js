@@ -1,12 +1,4 @@
-// import {createUploadthing} from 'uploadthing/next'
 
-// const f=createUploadthing();
-
-// export const OurFileRouter={
-//     images:f({image: {maxFileSize:"4MB", maxFileCount:1}})
-//     .middleware(()=>{})
-//     .onUploadComplete(()=>{})
-// }
 
 import { createUploadthing } from "uploadthing/next";
 

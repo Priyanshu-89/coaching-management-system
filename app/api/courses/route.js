@@ -1,6 +1,8 @@
 import Course from "@/app/models/CourseModel";
 import connectDb from "@/app/utils/ConnectDb";
 import { NextResponse } from "next/server";
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 
 export async function POST(req){
     await connectDb();

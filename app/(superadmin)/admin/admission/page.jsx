@@ -2,6 +2,9 @@
 import connectDb from '@/app/utils/ConnectDb'
 import User from '@/app/models/UserModel';
 import CallingStudentTable from '../ui/CallingStudentTable';
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 
 const AdmissionPage = async() => {
     await connectDb();

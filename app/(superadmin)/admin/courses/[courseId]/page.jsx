@@ -19,11 +19,15 @@ import Category from '@/app/models/Category'
 import { Action } from './_components/actions'
 import { ImageForm } from './_components/imageForm'
 import mongoose from 'mongoose'
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
+
 
 
 const CourseIdPage = async ({ params }) => {
   await connectDb()
-  const { courseId } =await params
+  // const { courseId } =await params
+  const { courseId } = params
   if (!courseId || !mongoose.Types.ObjectId.isValid(courseId)) {
     return <div className="p-6 text-red-500 font-semibold">Invalid Course ID</div>;
   }
