@@ -21,6 +21,7 @@ import { ImageForm } from './_components/imageForm'
 import mongoose from 'mongoose'
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
+export const revalidate = 0;
 
 
 
