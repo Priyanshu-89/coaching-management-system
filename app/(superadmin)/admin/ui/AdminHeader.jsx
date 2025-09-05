@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 
-import { FaRegBell } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa6";
 import Link from "next/link";
